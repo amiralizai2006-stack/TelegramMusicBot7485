@@ -4,10 +4,11 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends ffmpeg && \
     rm -rf /var/lib/apt/lists/*
 
+WORKDIR /app
+
 COPY . /app/
-WORKDIR /app/
 
 RUN pip3 install --no-cache-dir -U pip
-RUN pip3 install --no-cache-dir -U -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 CMD ["python3", "-m", "Codexun"]
