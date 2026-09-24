@@ -6,7 +6,7 @@ dnspython
 ffmpeg-python
 future
 gitpython
-pyrogram==1.4.16
+pyrogram==2.0.106
 hurry.filesize
 heroku3
 motor==3.0.0
@@ -23,7 +23,7 @@ uvloop
 wget
 youtube-search-python
 youtube-search
-git+https://github.com/yt-dlp/yt-dlp.git
+yt-dlp
 telegraph
 regex
 html5lib
