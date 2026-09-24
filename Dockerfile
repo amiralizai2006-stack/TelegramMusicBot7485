@@ -11,4 +11,4 @@ COPY . /app/
 RUN pip3 install --no-cache-dir -U pip
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-CMD ["python3", "-m", "Codexun"]
+CMD ["sh", "-c", "date -u; python3 -m Codexun"]
