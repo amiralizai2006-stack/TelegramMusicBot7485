@@ -11,4 +11,4 @@ COPY . /app/
 RUN pip3 install --no-cache-dir -U pip
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-CMD ["sh", "-c", "date -u; python3 -m Codexun"]
+CMD ["sh", "-c", "echo '=== CONTAINER TIME ==='; date -u '+%Y-%m-%d %H:%M:%S UTC'; echo '=== PYTHON TIME ==='; python3 -c 'import datetime; print(datetime.datetime.now(datetime.timezone.utc))'; echo '=== START BOT ==='; python3 -m Codexun"]
